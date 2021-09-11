@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>login</title>
+    <link rel="stylesheet" href="css/estilo.css">
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="loginJs.js"></script>
+     <div class="login-box">
+       <img class="avatar" src="image/users.png" alt="logo de usuario">
+       <h1>Autenticación de usuarios</h1>
+
+         <!-- USERNAME -->
+         <label for="username">Usuario</label>
+         <input id="user" type="text" placeholder="Ingresar Usuario">
+
+         <!-- PASSWORD -->
+         <label for="password">Contraseña</label>
+         <input id="pass" type="password" placeholder="Ingresar Contraseña">
+
+         <button onclick="login()">Ingresar</button>
+         <button onclick="addUser()">Crear usuario</button>
+         <div id="w1" style="display: none;">
+             <br>
+             <label style="color: red;">Credenciales incorrectas</label>
+         </div>
+         <div id="w2" style="display: none;">
+             <br>
+             <label style="color: green;">Usuario creado correctamente</label>
+         </div>
+       </div>
+
+       
+  </body>
+</html>
